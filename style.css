@@ -1,0 +1,100 @@
+html {
+    position: relative;
+}
+body {
+    background-color: #eee;
+    margin-top: 50px;
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid whitesmoke;;
+    border-radius: 150px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.jumbotron {
+    background-image: url(image/ben-douglas-bGfRaYZULY0-unsplash\ \(1\).jpg) ;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron p {
+    color : #17a2b8 ;
+    text-shadow : 1px 2px 10px rgb(0,0,0,0.5);
+}
+
+
+
+hr {
+    width: 250px;
+    border-top: 3px solid darkgray;
+}
+
+.porfolio .container hr {
+    width: 250px;
+    border-top: 3px solid whitesmoke;
+    }
+
+section {
+    min-height: 400px;
+}
+
+.about {
+    color:black;
+}
+
+.kanan, .kiri {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.kanan {
+    transform: translate(50px, 0);
+}
+
+.kanan.pmuncul, .kiri.pmuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.porfolio {
+    background-color: #17a2b8;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.porfolio h2 {
+    color: whitesmoke;
+}
+
+.porfolio img {
+    border: 5px solid #777;
+}
+
+.porfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0 ,-40px);
+    transition: 1s;    
+}
+
+.porfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.contact {
+    color: black;
+    padding-bottom: 150px; 
+    padding-top: 50px;
+
+}
+
+footer {
+    position : absolute ;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    color: darkgray;
+    padding-top: 5px;
+}
